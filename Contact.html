@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<style>
+    /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section,
+    summary {
+      display: block
+    }
+
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block;
+      vertical-align: baseline
+    }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+
+   
+
+    a {
+      background: transparent
+    }
+
+    a:active,
+    a:hover {
+      outline: 0
+    }
+
+    abbr[title] {
+      border-bottom: 1px dotted
+    }
+
+    b,
+    strong {
+      font-weight: bold
+    }
+
+    dfn {
+      font-style: italic
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0
+    }
+
+    mark {
+      background: #ff0;
+      color: #000
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sup {
+      top: -0.5em
+    }
+
+    sub {
+      bottom: -0.25em
+    }
+
+    img {
+      border: 0
+    }
+
+    svg:not(:root) {
+      overflow: hidden
+    }
+
+    figure {
+      margin: 1em 40px
+    }
+
+    hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0
+    }
+
+    pre {
+      overflow: auto
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0
+    }
+
+    button {
+      overflow: visible
+    }
+
+    button,
+    select {
+      text-transform: none
+    }
+
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="Send"] {
+      -webkit-appearance: button;
+      cursor: pointer
+    }
+
+    button[disabled],
+    html input[disabled] {
+      cursor: default
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0
+    }
+
+    input {
+      line-height: normal
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    input[type="search"] {
+      -webkit-appearance: textfield;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    fieldset {
+      border: 1px solid #c0c0c0;
+      margin: 0 2px;
+      padding: 0.35em 0.625em 0.75em
+    }
+
+    legend {
+      border: 0;
+      padding: 0
+    }
+
+    textarea {
+      overflow: auto
+    }
+
+    optgroup {
+      font-weight: bold
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    td,
+    th {
+      padding: 0
+    }
+
+    * {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    html {
+      font-size: 62.5%;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #333;
+      background-color: #f2f3f8
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit
+    }
+
+    a {
+      color: #428bca;
+      text-decoration: none
+    }
+
+    a:hover,
+    a:focus {
+      color: #188018;
+      text-decoration: underline
+    }
+
+    a:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px
+    }
+
+    figure {
+      margin: 0
+    }
+
+    img {
+      vertical-align: middle
+    }
+
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+
+    .img-rounded {
+      border-radius: 6px
+    }
+
+    .img-thumbnail {
+      padding: 4px;
+      line-height: 1.42857;
+      background-color: #f2f3f8;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+      max-width: 100%;
+      height: auto
+    }
+
+    .img-circle {
+      border-radius: 50%
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #188018
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      line-height: 1.1;
+      color: #188018
+    }
+
+    h1 small,
+    h1 .small,
+    h2 small,
+    h2 .small,
+    h3 small,
+    h3 .small,
+    h4 small,
+    h4 .small,
+    h5 small,
+    h5 .small,
+    h6 small,
+    h6 .small,
+    .h1 small,
+    .h1 .small,
+    .h2 small,
+    .h2 .small,
+    .h3 small,
+    .h3 .small,
+    .h4 small,
+    .h4 .small,
+    .h5 small,
+    .h5 .small,
+    .h6 small,
+    .h6 .small {
+      font-weight: normal;
+      line-height: 1;
+      color: #999
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3 {
+      margin-top: 20px;
+      margin-bottom: 10px
+    }
+
+    h1 small,
+    h1 .small,
+    .h1 small,
+    .h1 .small,
+    h2 small,
+    h2 .small,
+    .h2 small,
+    .h2 .small,
+    h3 small,
+    h3 .small,
+    .h3 small,
+    .h3 .small {
+      font-size: 65%
+    }
+
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+      margin-top: 10px;
+      margin-bottom: 10px
+    }
+
+    h4 small,
+    h4 .small,
+    .h4 small,
+    .h4 .small,
+    h5 small,
+    h5 .small,
+    .h5 small,
+    .h5 .small,
+    h6 small,
+    h6 .small,
+    .h6 small,
+    .h6 .small {
+      font-size: 75%
+    }
+
+    h1,
+    .h1 {
+      font-size: 36px
+    }
+
+    h2,
+    .h2 {
+      font-size: 30px
+    }
+
+    h3,
+    .h3 {
+      font-size: 24px
+    }
+
+    h4,
+    .h4 {
+      font-size: 18px
+    }
+
+    h5,
+    .h5 {
+      font-size: 14px
+    }
+
+    h6,
+    .h6 {
+      font-size: 12px
+    }
+
+    p {
+      margin: 0 0 10px;
+      color: #188018
+    }
+
+    .lead {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 1.4
+    }
+
+    @media (min-width: 768px) {
+      .lead {
+        font-size: 21px
+      }
+    }
+
+    small,
+    .small {
+      font-size: 85%
+    }
+
+    
+ 
+   .text-center {
+      text-align: center
+    }
+
+    .blockquote-reverse,
+    blockquote.pull-right {
+      padding-right: 15px;
+      padding-left: 0;
+      border-right: 5px solid #eee;
+      border-left: 0;
+      text-align: right
+    }
+
+
+   
+
+   
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px
+    }
+
+
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+
+    .row:before,
+    .row:after {
+      content: " ";
+      display: table
+    }
+
+    .row:after {
+      clear: both
+    } 
+    .col-xs-12,
+    .col-sm-12,
+    .col-md-12,
+   
+    legend {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: inherit;
+      color: #333;
+      border: 0;
+      border-bottom: 1px solid #e5e5e5
+    }
+
+    
+    
+
+    
+
+    
+
+   
+
+    .page-wrap {
+      float: right;
+      width: 100%;
+      -webkit-transition: width 0.2s ease;
+      transition: width 0.2s ease
+    }
+
+    .main-nav {
+      position: fixed;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: #333339;
+      overflow-y: auto;
+      -webkit-transition: width .2s ease;
+      transition: width .2s ease;
+      color: #ccc !important
+    }
+
+    .main-nav a {
+      color: #ccc
+    }
+
+    .close-menu {
+      display: none
+    }
+
+    #main-nav:target {
+      width: 40%
+    }
+
+    #main-nav:target+.page-wrap {
+      width: 60%;
+      overflow-x: hidden
+    }
+
+    #main-nav:target+.page-wrap .open-menu {
+      display: none
+    }
+
+    #main-nav:target+.page-wrap .close-menu {
+      display: block
+    }
+
+    #main-nav:target+.page-wrap .main-header {
+      width: 60%;
+      left: 40%
+    }
+
+    .jumbotron {
+      padding: 30px;
+      color: #fff;
+      background-color: #eee;
+      height: 700px;
+      background: -webkit-linear-gradient(rgba(59, 94, 52, 0.8), rgba(52, 94, 54, 0.8)), ;
+      background: linear-gradient(rgba(59, 94, 52, 0.8), rgba(59, 94, 52, 0.8)), no-repeat center center fixed;
+      background-size: cover;
+      text-transform: capitalize
+    }
+
+    .jumbotron hr {
+      width: 80%;
+      margin: 5px auto;
+      border-color: #eee
+    }
+
+    .jumbotron h1,
+    .jumbotron .h1 {
+      color: inherit;
+      font-size: 56px;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 100;
+      letter-spacing: 3px;
+      text-transform: uppercase
+    }
+
+    .jumbotron h2,
+    .jumbotron .h2 {
+      font-weight: 100;
+      letter-spacing: 2px;
+      color: inherit
+    }
+
+    .jumbotron p {
+      font-size: 21px;
+      font-weight: 200
+    }
+
+    .container .jumbotron {
+      border-radius: 6px
+    }
+
+    .jumbotron .container {
+      max-width: 100%
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px
+      }
+
+      .container .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 35px
+      }
+
+      .jumbotron h2,
+      .jumbotron .h2 {
+        font-size: 21px
+      }
+    }
+
+    .section {
+      font-size: 56px;
+      text-align: center;
+      margin-top: 35px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      color: #34495e;
+      text-transform: capitalize
+    }
+
+    .section hr {
+      width: 100px;
+      height: 50px
+    }
+
+    .work {
+      background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), no-repeat center center;
+      background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), no-repeat center center;
+      height: 250px;
+      background-size: cover;
+      padding-top: 20px
+    }
+
+    .work h3,
+    .work p {
+      color: #fff !important
+    }
+
+    .work a {
+      color: #fff !important;
+      text-decoration: underline
+    }
+
+    
+
+ 
+  </style>
+
+<body>
+
+<div class="page-wrap">
+
+  <div class="jumbotron">
+    <div style="margin-top:130px" class="container">
+      <a href="#main-nav" class="h5 open-menu"><i
+          style="color:#fff; position: relative; bottom:120px; cursor:pointer;"
+          class="fa fa-bars fa-2x fa-fw"></i></a>
+      <a href="#" class="h5 close-menu"><i style="color:#fff; position: relative; bottom:120px; cursor:pointer;"
+          class="fa fa-times fa-2x fa-fw"></i></a>
+      <h1>I'm Aryaman Rawat</h1>
+      <div class="spacer"></div>
+      <h1>Designer + Developer</h1>
+      <div class="spacer"></div>
+      <hr>
+      <hr>
+      <h2 class="text-center">I build web apps</h2>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <h1></h1>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <h3>Hey!</h3>
+          <p> From the bottom of my heart, thank you for contacting me. I am waiting to see if or when I will receive an interview date
+              
+          </p>
+          <p>I am excited about the opportunity to interview.</a></p>
+        </div>
+      </div>
+    </div>
+    <!--/.row-->
+  </div>
+  
+
+
+  <!--<div class="hidden-xs"><div class="work-together" id="contact">LETS WORK TOGETHER</div></div>-->
+  <div class="section" id="contact">
+    <h1>Let&apos;s Work Together</h1>
+    <hr>
+  </div>
+
+ 
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+          <h3>Contact Details</h3>
+          <div class="spacer"></div>
+          <p class="lead" style="margin-bottom:0px;"><i class="fa fa-map-marker"></i>&nbsp; 263 3rd Floor, Block C
+          </p>
+          <p class="lead"><i class="fa fa-phone"></i>&nbsp;Sector-45, Gurugram</p>
+          <p class="lead"><i class="fa fa-phone"></i>&nbsp; 9038181034</p>
+          <p class="lead"><i class="fa fa-envelope"></i>&nbsp; arawat.kol@gmail.com</p>
+        </div>
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+    <div class="container hidden-sm hidden-xs">
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      
+    </div>
+  </div>
+  
+
+</div>
+<!--/.page-wrap-->
+</body>
+</html>
